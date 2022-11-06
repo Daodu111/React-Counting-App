@@ -1,3 +1,4 @@
 # React-Counting-App
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-vfygrz)
+A create-react-app project based on counting using react hooks and useReducer
+
