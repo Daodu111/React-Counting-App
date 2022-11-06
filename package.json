@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "fbjs": "^0.2.1",
+    "firebase-tools": "^11.16.0",
     "material-ui/core": "*",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
