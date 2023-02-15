@@ -1,0 +1,18 @@
+// MaxLimit.js
+import React from "react";
+
+function MaxLimit({ maxCount, setMaxCount }) {
+  return (
+    <div>
+      <label htmlFor="max-count">Max Count:</label>
+      <input
+        id="max-count"
+        type="number"
+        value={maxCount}
+        onChange={(e) => setMaxCount(parseInt(e.target.value))}
+      />
+    </div>
+  );
+}
+
+export default MaxLimit;
