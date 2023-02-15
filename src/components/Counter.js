@@ -2,8 +2,7 @@ import React from 'react'
 import { React, useState } from 'react'
 import {Link} from 'react-router-dom'
 import '../style.css'
-import MaxLimit from "./MaxLimit";
-
+import MaxLimit from '../components/MaxLimit';
  
 export default function CounterApp() {
   const [counter, setCounter] = useState(0);
@@ -11,7 +10,9 @@ export default function CounterApp() {
  
   //increase counter
   const increase = () => {
-    setCounter(count => count + 1);
+    if (counter < maxCount) {
+      setCounter(counter + 1);
+    }
   };
  
   //decrease counter
@@ -41,4 +42,3 @@ export default function CounterApp() {
     </div>
   );
 }
-
