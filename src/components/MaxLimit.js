@@ -3,8 +3,8 @@ import React from "react";
 
 function MaxLimit({ maxCount, setMaxCount }) {
   return (
-    <div>
-      <label htmlFor="max-count">Max Count:</label>
+    <div style={{ marginBottom: "1rem" }}>
+      <label htmlFor="max-count" style={{ display: "block", marginBottom: "0.5rem"}}>Max Count:</label>
       <input
         id="max-count"
         type="number"
