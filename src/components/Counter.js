@@ -2,9 +2,12 @@ import React from 'react'
 import { React, useState } from 'react'
 import {Link} from 'react-router-dom'
 import '../style.css'
+import MaxLimit from "./MaxLimit";
+
  
 export default function CounterApp() {
   const [counter, setCounter] = useState(0);
+  const [maxCount, setMaxCount] = useState(10);
  
   //increase counter
   const increase = () => {
@@ -30,6 +33,7 @@ export default function CounterApp() {
         <button className="control_btn" onClick={increase}>Increment</button>
         <button className="control_btn" onClick={decrease}>Decrement</button>
         <button className="reset" onClick={reset}>Reset</button>
+        <MaxLimit maxCount={maxCount} setMaxCount={setMaxCount} />
       </div>
       <Link to='/' className='about-btn'>
         Back Home
